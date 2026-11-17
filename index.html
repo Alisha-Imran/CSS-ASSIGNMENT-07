@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CardioCare - Heart Specialists</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="topbar">
+        <div class="container topbar-content">
+            <div>
+                <span><i class="fa-solid fa-heart-pulse"></i> 24/7 Emergency:</span>
+                <a href="tel:+1800227346">+1 (800) CARDIO</a>
+                <span class="top-email">| <i class="fa-regular fa-envelope"></i> care@cardiocare.com</span>
+            </div>
+            <p>Mon-Sat: 8AM - 8PM <span>|</span> Emergency: 24/7</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-heart-pulse"></i></span>
+                <span>CardioCare<small>Heart Specialists</small></span>
+            </a>
+
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <nav class="navigation">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#departments">Departments</a>
+                <a href="#appointment">Appointments</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+                <a href="#appointment" class="nav-button">
+                    <i class="fa-regular fa-calendar-check"></i> Book Appointment
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="container hero-layout">
+                <div class="hero-content">
+                    <div class="hero-badges">
+                        <span><i class="fa-solid fa-heart"></i> Board Certified Cardiologist</span>
+                        <span><i class="fa-solid fa-wave-square"></i> Advanced Diagnostics</span>
+                        <span><i class="fa-solid fa-shield-heart"></i> Patient-Centered Care</span>
+                    </div>
+
+                    <h1>Expert Heart Care <br>For A <span>Healthier</span> Life</h1>
+
+                    <p>
+                        Providing advanced cardiology services, heart health
+                        consultations, preventive care, diagnostics, and
+                        personalized treatment plans for patients of all ages.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#appointment" class="btn btn-red">
+                            <i class="fa-regular fa-calendar-check"></i> Book Appointment
+                        </a>
+                        <a href="#services" class="btn btn-outline">
+                            <i class="fa-regular fa-circle-play"></i> Explore Services
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div>
+                            <h3>20+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div>
+                            <h3>10K+</h3>
+                            <p>Patients Treated</p>
+                        </div>
+                        <div>
+                            <h3>98%</h3>
+                            <p>Satisfaction Rate</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-image-box">
+                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=900&q=85" alt="Cardiology doctors">
+                    </div>
+
+                    <div class="floating-card heart-card">
+                        <span><i class="fa-solid fa-heart-pulse"></i></span>
+                        <div>
+                            <strong>Heart Rate</strong>
+                            <small>72 BPM Normal</small>
+                        </div>
+                    </div>
+
+                    <div class="floating-card consultation-card">
+                        <span><i class="fa-solid fa-circle-check"></i></span>
+                        <div>
+                            <strong>Consultation</strong>
+                            <small>Available Today</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+           <!-- APPOINTMENT -->
+    <section class="appointment section" id="appointment">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-tag"><i class="fa-regular fa-calendar-check"></i> BOOK NOW</span>
+                <h2>Schedule Your Appointment</h2>
+                <p>Quick, simple online booking. Our team will confirm within 2 hours during<br class="desktop-break"> working hours.</p>
+            </div>
+
+            <form class="appointment-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Patient Name *</label>
+                        <input type="text" placeholder="Your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email Address *</label>
+                        <input type="email" placeholder="your@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Phone Number *</label>
+                        <input type="tel" placeholder="+1 (555) 000-0000" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Preferred Date *</label>
+                        <input type="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Department</label>
+                        <select>
+                            <option>General Cardiology</option>
+                            <option>Interventional Cardiology</option>
+                            <option>Cardiac Imaging</option>
+                            <option>Cardiac Rehabilitation</option>
+                            <option>Emergency Cardiology</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Message</label>
+                        <input type="text" placeholder="Briefly describe your concern">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-red form-button">
+                    <i class="fa-regular fa-calendar-plus"></i> Schedule Appointment
+                </button>
+            </form>
+        </div>
+    </section>
+
+        <!-- About Doctor -->
+        <section class="about section" id="about">
+            <div class="container about-layout">
+                <div class="doctor-image">
+                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=800&q=85" alt="Dr Jonathan Carter">
+
+                    <div class="doctor-badge">
+                        <i class="fa-solid fa-user-doctor"></i>
+                        <div>
+                            <strong>Dr. Jonathan Carter</strong>
+                            <small>Senior Cardiologist, FACC</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <span class="section-tag">MEET THE DOCTOR</span>
+                    <h2>Dedicated to Your Heart Health with <span>20+ Years</span> of Expertise</h2>
+
+                    <p>
+                        Dr. Jonathan Carter is a board-certified cardiologist
+                        with over two decades of experience in diagnosing
+                        and treating complex cardiovascular conditions.
+                        He specializes in interventional cardiology,
+                        preventive care, and cardiac rehabilitation.
+                    </p>
+
+                    <div class="doctor-numbers">
+                        <div><h3>20+</h3><p>Years Experience</p></div>
+                        <div><h3>10K+</h3><p>Patients Treated</p></div>
+                        <div><h3>15+</h3><p>Certifications</p></div>
+                        <div><h3>50+</h3><p>Research Papers</p></div>
+                    </div>
+
+                    <ul class="doctor-list">
+                        <li><i class="fa-solid fa-circle-check"></i> MD, Harvard Medical School, Class of 2001</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Fellowship in Interventional Cardiology, Mayo Clinic</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Fellow of the American College of Cardiology (FACC)</li>
+                        <li><i class="fa-solid fa-circle-check"></i> American Heart Association Certified Specialist</li>
+                    </ul>
+
+                    <a href="#appointment" class="btn btn-red">Book a Consultation <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="services section light-bg" id="services">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-tag">OUR SERVICES</span>
+                    <h2>Comprehensive Cardiac Care Services</h2>
+                    <p>From diagnostics to rehabilitation, we offer a full spectrum of cardiology services tailored to your heart health needs.</p>
+                </div>
+
+                <div class="cards-grid six-cards">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                        <h3>Heart Health Consultation</h3>
+                        <p>Comprehensive cardiac assessments, risk evaluations, and personalized preventive care plans to keep your heart healthy.</p>
+                        <a href="#appointment">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-heart-circle-bolt"></i></div>
+                        <h3>ECG & Diagnostics</h3>
+                        <p>Advanced electrocardiography, echocardiography, stress testing, and Holter monitoring for accurate heart condition assessment.</p>
+                        <a href="#appointment">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                        <h3>Hypertension Management</h3>
+                        <p>Personalized blood pressure control programs combining medication management, lifestyle coaching, and continuous monitoring.</p>
+                        <a href="#appointment">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-person-walking"></i></div>
+                        <h3>Cardiac Rehabilitation</h3>
+                        <p>Structured recovery programs for heart attack survivors and surgery patients to restore strength and improve quality of life.</p>
+                        <a href="#appointment">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-shield-heart"></i></div>
+                        <h3>Preventive Cardiology</h3>
+                        <p>Proactive cardiovascular risk reduction through lifestyle modification, nutritional guidance, and targeted preventive therapies.</p>
+                        <a href="#appointment">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-truck-medical"></i></div>
+                        <h3>Emergency Cardiac Support</h3>
+                        <p>24/7 rapid response care for acute heart conditions including chest pain, arrhythmias, and cardiac emergencies.</p>
+                        <a href="#contact">Call Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="why section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-tag">WHY CHOOSE US</span>
+                    <h2>The CardioCare Difference</h2>
+                    <p>Excellence in cardiac care with a patient-first approach backed by cutting-edge technology.</p>
+                </div>
+
+                <div class="cards-grid four-cards">
+                    <div class="feature-card">
+                        <div class="service-icon"><i class="fa-solid fa-user-doctor"></i></div>
+                        <h3>Expert Medical Team</h3>
+                        <p>Board-certified cardiologists with decades of combined clinical experience.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="service-icon"><i class="fa-solid fa-microscope"></i></div>
+                        <h3>Advanced Technology</h3>
+                        <p>State-of-the-art diagnostic equipment for precise, accurate assessments.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="service-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                        <h3>Patient-Centered Care</h3>
+                        <p>Personalized treatment plans built around your unique health profile.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="service-icon"><i class="fa-solid fa-hospital"></i></div>
+                        <h3>Modern Facilities</h3>
+                        <p>Comfortable, fully-equipped clinic designed for the best patient experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics -->
+        <section class="stats">
+            <div class="container stats-grid">
+                <div><i class="fa-solid fa-award"></i><h2>20+</h2><p>Years of Experience</p></div>
+                <div><i class="fa-solid fa-users"></i><h2>10K+</h2><p>Patients Treated</p></div>
+                <div><i class="fa-solid fa-heart"></i><h2>98%</h2><p>Patient Satisfaction</p></div>
+                <div><i class="fa-solid fa-clock"></i><h2>24/7</h2><p>Emergency Care</p></div>
+            </div>
+        </section>
+
+        <!-- Process -->
+        <section class="process section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-tag">TREATMENT PROCESS</span>
+                    <h2>Your Journey to Better Heart Health</h2>
+                    <p>A clear, structured approach to cardiac care from first visit to ongoing wellness.</p>
+                </div>
+
+                <div class="process-grid">
+                    <div class="process-card">
+                        <span class="step-number">01</span>
+                        <div class="service-icon"><i class="fa-solid fa-comments"></i></div>
+                        <h3>Consultation</h3>
+                        <p>Thorough evaluation of your symptoms, medical history, and risk factors.</p>
+                    </div>
+
+                    <div class="process-card">
+                        <span class="step-number">02</span>
+                        <div class="service-icon"><i class="fa-solid fa-stethoscope"></i></div>
+                        <h3>Diagnosis</h3>
+                        <p>Advanced diagnostic tests to accurately identify your heart condition.</p>
+                    </div>
+
+                    <div class="process-card">
+                        <span class="step-number">03</span>
+                        <div class="service-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+                        <h3>Treatment Plan</h3>
+                        <p>Personalized treatment strategy combining evidence-based therapies.</p>
+                    </div>
+
+                    <div class="process-card">
+                        <span class="step-number">04</span>
+                        <div class="service-icon"><i class="fa-solid fa-heart-circle-check"></i></div>
+                        <h3>Ongoing Care</h3>
+                        <p>Continuous monitoring and follow-up to ensure lasting heart health.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Departments -->
+        <section class="departments section light-bg" id="departments">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-tag">OUR DEPARTMENTS</span>
+                    <h2>Specialized Medical Departments</h2>
+                    <p>Each department staffed with sub-specialists and equipped with the latest cardiac care technology.</p>
+                </div>
+
+                <div class="cards-grid six-cards">
+                    <div class="department-card">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                        <h3>General Cardiology</h3>
+                        <p>Comprehensive heart care covering diagnosis, management, and prevention of cardiovascular disease.</p>
+                        <span>4 Specialists Available</span>
+                    </div>
+
+                    <div class="department-card">
+                        <i class="fa-solid fa-heart-circle-bolt"></i>
+                        <h3>Interventional Cardiology</h3>
+                        <p>Catheter-based procedures including angioplasty, stenting, and valve interventions.</p>
+                        <span>3 Interventional Cardiologists</span>
+                    </div>
+
+                    <div class="department-card">
+                        <i class="fa-solid fa-x-ray"></i>
+                        <h3>Cardiac Imaging</h3>
+                        <p>Advanced echocardiography, cardiac CT, MRI, and nuclear imaging diagnostics.</p>
+                        <span>2 Imaging Specialists</span>
+                    </div>
+
+                    <div class="department-card">
+                        <i class="fa-solid fa-person-walking"></i>
+                        <h3>Cardiac Rehabilitation</h3>
+                        <p>Post-cardiac event recovery with supervised exercise and educational programs.</p>
+                        <span>Dedicated Rehab Center</span>
+                    </div>
+
+                    <div class="department-card">
+                        <i class="fa-solid fa-wave-square"></i>
+                        <h3>Electrophysiology</h3>
+                        <p>Specialized arrhythmia diagnosis and management including ablation and pacemakers.</p>
+                        <span>2 EP Specialists</span>
+                    </div>
+
+                    <div class="department-card">
+                        <i class="fa-solid fa-truck-medical"></i>
+                        <h3>Emergency Cardiology</h3>
+                        <p>Rapid response cardiac emergency unit available 24 hours a day, 7 days a week.</p>
+                        <span>24/7 Availability</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-tag">TESTIMONIALS</span>
+                    <h2>What Our Patients Say</h2>
+                    <p>Thousands of patients trust CardioCare with their heart health. Here are their stories.</p>
+                </div>
+
+                <div class="cards-grid three-cards">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Dr. Carter literally saved my life. The entire team's professionalism and care was extraordinary."</p>
+                        <div class="patient"><span>MJ</span><div><strong>Michael Johnson</strong><small>Cardiac Patient, 2023</small></div></div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"The team here has completely transformed my approach. I feel better than I have in years."</p>
+                        <div class="patient"><span>SE</span><div><strong>Sarah Edwards</strong><small>Hypertension Patient, 2024</small></div></div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"The cardiac rehabilitation program was exceptional. The team guided me through every step."</p>
+                        <div class="patient"><span>RB</span><div><strong>Robert Barnes</strong><small>Bypass Patient, 2023</small></div></div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Dr. Carter's preventive program has significantly reduced my cardiovascular risk factors."</p>
+                        <div class="patient"><span>LP</span><div><strong>Linda Park</strong><small>Preventive Care Patient, 2024</small></div></div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"The response was immediate and professional. Excellent care and support from the team."</p>
+                        <div class="patient"><span>TW</span><div><strong>Thomas Wilson</strong><small>Emergency Patient, 2024</small></div></div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"The online booking system is so convenient. The ECG results were explained clearly."</p>
+                        <div class="patient"><span>AM</span><div><strong>Amanda Moore</strong><small>Diagnostics Patient, 2024</small></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog -->
+        <section class="blog section light-bg" id="blog">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-tag">HEALTH BLOG</span>
+                    <h2>Heart Health Insights</h2>
+                    <p>Expert articles on cardiology, preventive care, healthy living, and the latest in heart health research.</p>
+                </div>
+
+                <div class="cards-grid three-cards">
+                    <article class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=85" alt="Heart health">
+                        <div class="blog-content">
+                            <span>Heart Health <small>May 15, 2026</small></span>
+                            <h3>10 Early Warning Signs of Heart Disease You Shouldn't Ignore</h3>
+                            <p>Learn the subtle symptoms that could indicate cardiovascular issues and when to seek medical attention.</p>
+                            <a href="#contact">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=85" alt="Preventive care">
+                        <div class="blog-content">
+                            <span>Preventive Care <small>April 28, 2026</small></span>
+                            <h3>How to Lower Your Blood Pressure Naturally: A Cardiologist's Guide</h3>
+                            <p>Evidence-based lifestyle changes that can significantly improve your heart health.</p>
+                            <a href="#contact">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=800&q=85" alt="Healthy food">
+                        <div class="blog-content">
+                            <span>Healthy Living <small>April 10, 2026</small></span>
+                            <h3>The Mediterranean Diet & Heart Health: What the Science Says</h3>
+                            <p>Exploring how healthy eating patterns can support cardiovascular health.</p>
+                            <a href="#contact">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="center-button">
+                    <a href="#blog" class="btn btn-outline-dark">View All Articles <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+       <!-- FAQ -->
+<section class="faq section" id="faq">
+    <div class="container">
+        <div class="section-heading">
+            <span class="section-tag"><i class="fa-regular fa-circle-question"></i> FAQ</span>
+            <h2>Frequently Asked Questions</h2>
+            <p>Everything you need to know about our services and booking process.</p>
+        </div>
+
+        <div class="faq-list">
+            <details>
+                <summary>How do I book an appointment?</summary>
+                <p>You can book online using the appointment form above, call our clinic directly at +1 (800) CARDIO, or email us. We confirm all appointments within 2 business hours.</p>
+            </details>
+
+            <details>
+                <summary>What heart conditions do you treat?</summary>
+                <p>We treat a comprehensive range of cardiovascular conditions including coronary artery disease, heart failure, arrhythmias, hypertension, valvular heart disease, peripheral artery disease, and more.</p>
+            </details>
+
+            <details>
+                <summary>Do you offer emergency consultations?</summary>
+                <p>Yes, our emergency cardiac care line is available 24 hours a day, 7 days a week.</p>
+            </details>
+
+            <details>
+                <summary>What insurance plans are accepted?</summary>
+                <p>We accept most major insurance plans. Please contact our billing team to verify your specific plan coverage before your appointment.</p>
+            </details>
+
+            <details>
+                <summary>How long does a first consultation take?</summary>
+                <p>An initial consultation typically takes 45-60 minutes, including a medical history review and physical examination.</p>
+            </details>
+
+            <details>
+                <summary>Do you offer telemedicine consultations?</summary>
+                <p>Yes, we offer secure video consultations for follow-up visits, medication reviews, and initial assessments.</p>
+            </details>
+        </div>
+    </div>
+</section>
+       <!-- CTA -->
+<section class="cta">
+    <div class="container cta-content">
+        <span class="section-tag">
+            <i class="fa-solid fa-heart"></i> TAKE ACTION TODAY
+        </span>
+
+        <h2>Take The First Step Toward<br>Better Heart Health</h2>
+
+        <p>
+            Don't wait until symptoms become emergencies. Schedule your cardiac
+            consultation today and invest in the health of your heart.
+        </p>
+
+        <div class="cta-buttons">
+            <a href="#appointment" class="btn btn-red">
+                <i class="fa-regular fa-calendar-check"></i> Book Appointment
+            </a>
+
+            <a href="#contact" class="btn btn-outline">
+                <i class="fa-solid fa-phone"></i> Contact Clinic
+            </a>
+        </div>
+    </div>
+</section>
+        <!-- Contact -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-tag">CONTACT US</span>
+                    <h2>Get In Touch</h2>
+                    <p>We're here to answer your questions and help you on your heart health journey.</p>
+                </div>
+
+                <div class="cards-grid three-cards">
+                    <div class="contact-card">
+                        <i class="fa-solid fa-phone"></i>
+                        <h3>Emergency Contact</h3>
+                        <p>+1 (800) CARDIO</p>
+                        <span>Available 24 hours, 7 days a week</span>
+                    </div>
+
+                    <div class="contact-card">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h3>Clinic Location</h3>
+                        <p>123 Medical Center Drive</p>
+                        <span>Suite 400, New York, NY 10001</span>
+                        <a href="#contact">Get Directions <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="contact-card">
+                        <i class="fa-regular fa-clock"></i>
+                        <h3>Working Hours</h3>
+                        <p>Monday - Friday: 8AM - 8PM</p>
+                        <span>Saturday: 9AM - 5PM<br>Sunday: Emergency Only</span>
+                    </div>
+                </div>
+
+                <div class="emergency-box">
+                    <div>
+                        <h3><i class="fa-solid fa-heart-pulse"></i> Cardiac Emergency? Call Us Now</h3>
+                        <p>Our emergency team responds within minutes, 24 hours a day.</p>
+                    </div>
+                    <a href="tel:+1800227346" class="btn btn-red"><i class="fa-solid fa-phone"></i> +1 (800) CARDIO</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+
+            <div class="footer-about">
+                <a href="#home" class="logo footer-logo">
+                    <span class="logo-icon"><i class="fa-solid fa-heart-pulse"></i></span>
+                    <span>CardioCare<small>Heart Specialists</small></span>
+                </a>
+
+                <p>CardioCare is a premier cardiology clinic dedicated to delivering world-class heart care with compassion. Since 2003, we've been combining advanced technology with a patient-first philosophy.</p>
+
+                <div class="certifications">
+                    <span>FACC Certified</span>
+                    <span>HIPAA Compliant</span>
+                    <span>Top Rated 2024</span>
+                    <span>AHA Member</span>
+                </div>
+
+                <h4>Follow Us:</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Medical Services</h3>
+                <a href="#services">Heart Consultation</a>
+                <a href="#services">ECG & Diagnostics</a>
+                <a href="#services">Hypertension Care</a>
+                <a href="#services">Cardiac Rehab</a>
+                <a href="#services">Preventive Care</a>
+                <a href="#services">Emergency Care</a>
+                <a href="#services">Electrophysiology</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Patient Resources</h3>
+                <a href="#appointment">Book Appointment</a>
+                <a href="#contact">Patient Portal</a>
+                <a href="#contact">Telehealth</a>
+                <a href="#faq">Patient FAQ</a>
+                <a href="#contact">Insurance Info</a>
+                <a href="#contact">Medical Records</a>
+                <a href="#contact">Billing & Payments</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="#about">About Doctor</a>
+                <a href="#departments">Departments</a>
+                <a href="#blog">Health Blog</a>
+                <a href="#contact">Careers</a>
+                <a href="#contact">Research</a>
+                <a href="#contact">Contact Us</a>
+                <a href="#home">Sitemap</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Working Hours</h3>
+                <p>Monday <span>8AM - 8PM</span></p>
+                <p>Tuesday <span>8AM - 8PM</span></p>
+                <p>Wednesday <span>8AM - 8PM</span></p>
+                <p>Thursday <span>8AM - 8PM</span></p>
+                <p>Friday <span>8AM - 6PM</span></p>
+                <p>Saturday <span>9AM - 5PM</span></p>
+                <p>Sunday <span>Emergency Only</span></p>
+                <span class="open-label"><i class="fa-solid fa-circle"></i> Currently Open</span>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Info</h3>
+                <p><i class="fa-solid fa-location-dot"></i> 123 Medical Center Dr, Suite 400, New York, NY 10001</p>
+                <p><i class="fa-solid fa-phone"></i> +1 (800) CARDIO</p>
+                <p><i class="fa-solid fa-phone"></i> +1 (212) 555-0123</p>
+                <p><i class="fa-regular fa-envelope"></i> info@cardiocare.com</p>
+                <p><i class="fa-regular fa-envelope"></i> care@cardiocare.com</p>
+            </div>
+
+            <div class="footer-gallery">
+                <h3>Gallery - Our Clinic & Team</h3>
+                <div class="gallery-images">
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=300&q=80" alt="Doctor">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=300&q=80" alt="Medical team">
+                    <img src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?auto=format&fit=crop&w=300&q=80" alt="Hospital">
+                    <img src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=300&q=80" alt="Medical care">
+                    <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=300&q=80" alt="Clinic">
+                    <img src="https://images.unsplash.com/photo-1516841273335-e39b37888115?auto=format&fit=crop&w=300&q=80" alt="Healthcare">
+                </div>
+                <a href="#about" class="gallery-link">View All <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="footer-column awards">
+                <h3>Accreditations & Awards</h3>
+                <p><i class="fa-solid fa-award"></i> Best Cardiac Clinic <small>NY Health Awards 2024</small></p>
+                <p><i class="fa-solid fa-certificate"></i> JCAHO Accredited <small>Joint Commission 2024</small></p>
+                <p><i class="fa-solid fa-medal"></i> AHA Gold Plus <small>Heart Care Quality 2024</small></p>
+                <p><i class="fa-solid fa-trophy"></i> US News Top Rated <small>Top 10 Cardiologists 2024</small></p>
+            </div>
+
+            <div class="footer-column recent-articles">
+                <h3>Recent Health Articles</h3>
+                <a href="#blog">10 Early Warning Signs of Heart Disease <small>May 15, 2026</small></a>
+                <a href="#blog">How to Lower Your Blood Pressure Naturally <small>April 28, 2026</small></a>
+                <a href="#blog">The Mediterranean Diet & Heart Health <small>April 10, 2026</small></a>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>© 2026 CardioCare. All rights reserved.</p>
+            <p>Designed for healthcare professionals . Distributed by ThemeWagon</p>
+            <div>
+                <a href="#contact">Privacy Policy</a>
+                <a href="#contact">Terms of Service</a>
+                <a href="#faq">FAQs</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#appointment" class="floating-button">
+        <i class="fa-regular fa-calendar-check"></i> Book Appointment Now
+    </a>
+
+</body>
+</html>
